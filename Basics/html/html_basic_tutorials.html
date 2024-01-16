@@ -1,0 +1,195 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Div Elements -->
+    <div class="container" id="first-div-container">
+      This is some content inside a div tag
+    </div>
+
+    <h1>List of frequently used HTML tags</h1>
+
+    <!-- Headings -->
+    <h1>Hello World</h1>
+    <h2>2nd level heading</h2>
+    <h3>level 3 heading</h3>
+    <h4>level 4 heading</h4>
+    <h5>level 5 heading</h5>
+    <h6>level 6 heading</h6>
+
+    <!-- Text Insertion -->
+    <p>This is a paragraph text</p>
+    <span>This is a text in a span tag</span>
+    <span>This is a second span tag</span>
+
+    <!-- Images -->
+    <img src="../media/dino.jpg" alt="cute dino picture" />
+
+    <!-- Link to other websites/other pages/any location -->
+    <a
+      href="https://github.com/halee-t"
+      target="_blank"
+      class="anchor-tag-family"
+      >Go visit my GitHub</a
+    >
+    <a href="projects.html" class="anchor-tag-family">
+      Here is a link to my projects
+    </a>
+    <br /><br /><br /><br />
+    <a href="#first-div-container" class="anchor-tag-family">
+      Here is a link to the top of the page
+    </a>
+
+    <!--Horizontal Rule-->
+    <hr />
+    <!--Forced new lines-->
+    <br />
+    <br />
+    <br />
+
+    <!--Lists-->
+    <ol>
+      To Do:
+      <li>Study</li>
+      <li>Laundry</li>
+      <li>Cook</li>
+    </ol>
+
+    <ul>
+      Shopping List
+      <li>Bread</li>
+      <li>Eggs</li>
+      <li>Chicken</li>
+    </ul>
+
+    <!--Shorthand for long lists-->
+    <!--ul>li*4 press enter-->
+    <p>This is an example of an unordered list:</p>
+    <ul id="my-shopping-list" class="list-items">
+      <li class="items">Study</li>
+      <li class="items">Play</li>
+      <li class="items">Chores</li>
+      <li class="items">Sleep</li>
+    </ul>
+
+    <hr />
+    <br /><br /><br />
+
+    <!--form elements-->
+    <form method="get" action="localhost/login/">
+      <label for="user-email-field">Please Enter your email id:</label>
+      <input
+        type="email"
+        name="user-email-field"
+        value=""
+        id="user-email-field"
+        placeholder="abc@gmail.com"
+      />
+      <br />
+      <hr />
+      <label for="user-password-field">Enter your Password:</label>
+      <input
+        type="password"
+        name="user-password-field"
+        placeholder="************"
+        id="user-password-field"
+        value=""
+      />
+      <br />
+      <br />
+      <!--Checkboxes-->
+      <!--if you want to enforce that only one is chosen, give them all the same name, but DIFFERENT values-->
+      <p>Choose your favorite fruits:</p>
+      <input type="checkbox" name="apple" id="apple" value="apple" />
+      <label for="apple">Apple</label>
+      <input type="checkbox" name="orange" id="orange" value="orange" />
+      <label for="orange">Orange</label>
+      <input type="checkbox" name="grapes" id="grapes" value="grapes" />
+      <label for="grapes">Grapes</label>
+
+      <p>Pick ONE sport:</p>
+      <input type="radio" name="sport" id="basketball" value="basketball" />
+      <label for="basketball">Basketball</label>
+      <input type="radio" name="sport" id="football" value="football" />
+      <label for="basketball">Football</label>
+      <input type="radio" name="sport" id="soccer" value="soccer" />
+      <label for="soccer">Soccer</label>
+      <!--Submission Button-->
+      <br /><br />
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <!--Tables-->
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>John</td>
+          <td>20000</td>
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>Jane</td>
+          <td>50000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total Salary</td>
+          <td>70000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!--Semantic HTML tags-->
+    <!--
+      Use Semantics tags as much as possible for good programming
+      practice
+    -->
+    <br />
+    <br />
+
+    <!--Multimedia-->
+    <!--controls is a boolean attribute:
+      just writing it means that it is true
+    -->
+    <!--the messages show up if the media is not working-->
+    <audio src="./media" controls>This is a sample audio file</audio>
+    <br />
+    <video src="./media" controls>
+      Your browser does not support the embedded video file
+    </video>
+    <br />
+
+    <!--embed other files like pdf files or websites on your website-->
+    <iframe src="./media" frameborder="0" width="100%" height="400px"
+      >Your browser does not support iframe embedding</iframe
+    >
+    <iframe
+      src="https://www.oakland.edu"
+      frameborder="0"
+      width="100%"
+      height="300px"
+    >
+      Your browser does not support iframe embedding
+    </iframe>
+
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
