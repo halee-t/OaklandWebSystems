@@ -3,7 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gmail Nav Bar</title>
+    <title>Gmail Navbar</title>
+    <link rel="stylesheet" href="gmail-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- <span class="material-symbols-outlined">settings</span> -->
+
+    <button onclick="toggleMenu" class="burger material-symbols-outlined">
+      menu
+    </button>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/Gmail-Logo.wine.png" alt="gmail logo" />
+        <span>Gmail</span>
+      </div>
+      <div class="search">
+        <span class="material-symbols-outlined"> search </span>
+        <input
+          type="text"
+          placeholder="Search Mail"
+          spellcheck="false"
+          class="search"
+          id="search"
+        />
+      </div>
+      <nav>
+        <button class="material-symbols-outlined">help</button>
+        <button class="material-symbols-outlined">settings</button>
+        <button class="material-symbols-outlined">apps</button>
+        <img src="./assets/Profilepic.jpg" alt="channel logo for user email" />
+      </nav>
+    </nav>
+
+    <script>
+      const toggleMenu = () => {
+        document.body.classList.toggle("open"); //Checks if it is already open
+      };
+    </script>
+  </body>
 </html>
